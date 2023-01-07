@@ -14,14 +14,8 @@ warnings.filterwarnings('ignore')
 
 import nltk
 from nltk.stem import WordNetLemmatizer
-nltk.download('popular', quiet=True) # for downloading packages
+nltk.download('popular', quiet=True)
 
-# uncomment the following only the first time
-#nltk.download('punkt') # first-time use only
-#nltk.download('wordnet') # first-time use only
-
-
-#Reading in the corpus
 with open('chatbot.txt','r', encoding='utf8', errors ='ignore') as fin:
     raw = fin.read().lower()
 
@@ -86,7 +80,7 @@ while(flag==True):
                 sent_tokens.remove(user_response)
     else:
         flag=False
-        print("ROBO: Bye! take care..")    
+        print("ROBO: Bye! take care...")    
         
         
 
